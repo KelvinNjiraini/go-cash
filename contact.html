@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/script.js" defer></script>
+        <title>Log into your account</title>
+    </head>
+    <body class="relative">
+        <!-- Nav Container -->
+        <nav class="relative container mx-auto p-6">
+            <!-- Flex Container For All Items -->
+            <div class="flex items-center justify-between">
+                <!-- Flex Container For Logo/Menu -->
+                <div class="flex items-center space-x-20">
+                    <!-- Logo -->
+                    <!-- <img src="images/logo.svg" alt="" /> -->
+                    <a href="./index.html"
+                        ><h2 class="text-3xl text-cyan font-semibold">
+                            GoCash
+                        </h2></a
+                    >
+                    <!-- Left Menu -->
+                    <div class="hidden space-x-8 font-bold lg:flex">
+                        <!-- <a
+                            href="#"
+                            class="text-grayishViolet hover:text-veryDarkViolet"
+                            >Features</a
+                        >
+                        <a
+                            href="#"
+                            class="text-grayishViolet hover:text-veryDarkViolet"
+                            >Pricing</a
+                        >
+                        <a
+                            href="#"
+                            class="text-grayishViolet hover:text-veryDarkViolet"
+                            >Resources</a
+                        > -->
+                    </div>
+                </div>
+
+                <!-- Right Buttons Menu -->
+                <div
+                    class="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex"
+                >
+                    <a href="./contact.html"
+                        ><div class="hover:text-veryDarkViolet">
+                            Contact us
+                        </div></a
+                    >
+                    <a href="./login.html"
+                        ><div class="hover:text-veryDarkViolet">Login</div></a
+                    >
+                    <a
+                        href="./signup.html"
+                        class="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70"
+                        >Sign Up</a
+                    >
+                </div>
+
+                <!-- Hamburger Button -->
+                <button
+                    id="menu-btn"
+                    class="block hamburger lg:hidden focus:outline-none"
+                    type="button"
+                >
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div
+                id="menu"
+                class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-10"
+            >
+                <div
+                    class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+                >
+                    <!-- <a href="#" class="w-full text-center">Features</a>
+                    <a href="#" class="w-full text-center">Pricing</a>
+                    <a href="#" class="w-full text-center">Resources</a> -->
+                    <a href="./contact.html" class="w-full text-center"
+                        >Contact Us</a
+                    >
+                    <a href="./login.html" class="w-full pt-6 text-center"
+                        >Login</a
+                    >
+                    <a
+                        href="./signup.html"
+                        class="w-full py-3 text-center rounded-full bg-cyan"
+                        >Sign Up</a
+                    >
+                </div>
+            </div>
+        </nav>
+        <!-- content -->
+        <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+        <div class="overflow-hidden bg-white py-16 px-6 lg:px-8 lg:py-24">
+            <div class="relative mx-auto max-w-xl">
+                <svg
+                    class="absolute left-full translate-x-1/2 transform"
+                    width="404"
+                    height="404"
+                    fill="none"
+                    viewBox="0 0 404 404"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <pattern
+                            id="85737c0e-0916-41d7-917f-596dc7edfa27"
+                            x="0"
+                            y="0"
+                            width="20"
+                            height="20"
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <rect
+                                x="0"
+                                y="0"
+                                width="4"
+                                height="4"
+                                class="text-gray-200"
+                                fill="currentColor"
+                            />
+                        </pattern>
+                    </defs>
+                    <rect
+                        width="404"
+                        height="404"
+                        fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"
+                    />
+                </svg>
+                <svg
+                    class="absolute right-full bottom-0 -translate-x-1/2 transform"
+                    width="404"
+                    height="404"
+                    fill="none"
+                    viewBox="0 0 404 404"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <pattern
+                            id="85737c0e-0916-41d7-917f-596dc7edfa27"
+                            x="0"
+                            y="0"
+                            width="20"
+                            height="20"
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <rect
+                                x="0"
+                                y="0"
+                                width="4"
+                                height="4"
+                                class="text-gray-200"
+                                fill="currentColor"
+                            />
+                        </pattern>
+                    </defs>
+                    <rect
+                        width="404"
+                        height="404"
+                        fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"
+                    />
+                </svg>
+                <div class="text-center">
+                    <h2
+                        class="text-3xl font-bold tracking-tight text-veryDarkViolet sm:text-4xl"
+                    >
+                        Let us hear from you today!
+                    </h2>
+                    <p class="mt-4 text-lg leading-6 text-gray-500">
+                        Nullam risus blandit ac aliquam justo ipsum. Quam mauris
+                        volutpat massa dictumst amet. Sapien tortor lacus arcu.
+                    </p>
+                </div>
+                <div class="mt-12">
+                    <form
+                        class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+                    >
+                        <div>
+                            <label
+                                for="first-name"
+                                class="block text-sm font-medium text-gray-700"
+                                >First name</label
+                            >
+                            <div class="mt-1">
+                                <input
+                                    type="text"
+                                    name="first-name"
+                                    id="first-name"
+                                    autocomplete="given-name"
+                                    class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-cyan focus:ring-cyan"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <label
+                                for="last-name"
+                                class="block text-sm font-medium text-gray-700"
+                                >Last name</label
+                            >
+                            <div class="mt-1">
+                                <input
+                                    type="text"
+                                    name="last-name"
+                                    id="last-name"
+                                    autocomplete="family-name"
+                                    class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-cyan focus:ring-cyan"
+                                />
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label
+                                for="company"
+                                class="block text-sm font-medium text-gray-700"
+                                >Company</label
+                            >
+                            <div class="mt-1">
+                                <input
+                                    type="text"
+                                    name="company"
+                                    id="company"
+                                    autocomplete="organization"
+                                    class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-cyan focus:ring-cyan"
+                                />
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label
+                                for="email"
+                                class="block text-sm font-medium text-gray-700"
+                                >Email</label
+                            >
+                            <div class="mt-1">
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    autocomplete="email"
+                                    class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-cyan focus:ring-cyan"
+                                />
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label
+                                for="phone-number"
+                                class="block text-sm font-medium text-gray-700"
+                                >Phone Number</label
+                            >
+                            <div class="relative mt-1 rounded-md shadow-sm">
+                                <div
+                                    class="absolute inset-y-0 left-0 flex items-center"
+                                >
+                                    <label for="country" class="sr-only"
+                                        >Country</label
+                                    >
+                                    <select
+                                        id="country"
+                                        name="country"
+                                        class="h-full rounded-md border-transparent bg-transparent py-0 pl-4 pr-8 text-gray-500 focus:border-cyan focus:ring-cyan"
+                                    >
+                                        <option>US</option>
+                                        <option>CA</option>
+                                        <option>EU</option>
+                                    </select>
+                                </div>
+                                <input
+                                    type="text"
+                                    name="phone-number"
+                                    id="phone-number"
+                                    autocomplete="tel"
+                                    class="block w-full rounded-md border-gray-300 py-3 px-4 pl-20 focus:border-cyan focus:ring-cyan"
+                                    placeholder="+1 (555) 987-6543"
+                                />
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label
+                                for="message"
+                                class="block text-sm font-medium text-gray-700"
+                                >Message</label
+                            >
+                            <div class="mt-1">
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="4"
+                                    class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-cyan focus:ring-cyan"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <div class="flex items-start">
+                                <div class="ml-3">
+                                    <p class="text-base text-gray-500">
+                                        By sending your message, you agree to
+                                        the
+                                        <a
+                                            href="#"
+                                            class="font-medium text-gray-700 underline"
+                                            >Privacy Policy</a
+                                        >
+                                        and
+                                        <a
+                                            href="#"
+                                            class="font-medium text-gray-700 underline"
+                                            >Cookie Policy</a
+                                        >.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <button
+                                type="submit"
+                                class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-cyan px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan focus:outline-none focus:ring-2 focus:ring-cyan focus:ring-offset-2"
+                            >
+                                Let's talk
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="py-16 bg-veryDarkViolet">
+            <div
+                class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start"
+            >
+                <!-- Logo -->
+                <a href="./index.html"
+                    ><h2 class="text-3xl text-cyan font-semibold">GoCash</h2></a
+                >
+
+                <!-- Menus Container -->
+                <div
+                    class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0"
+                >
+                    <!-- Menu 1 -->
+                    <div
+                        class="flex flex-col items-center w-full md:items-start"
+                    >
+                        <div class="mb-5 font-bold text-white capitalize">
+                            Features
+                        </div>
+                        <div
+                            class="flex flex-col items-center space-y-3 md:items-start"
+                        >
+                            <a
+                                href="#"
+                                class="capitalize text-grayishViolet hover:text-cyan"
+                                >Mobile banking</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalize text-grayishViolet hover:text-cyan"
+                                >Online banking</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalize text-grayishViolet hover:text-cyan"
+                                >Bank tools and analytics</a
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Menu 2 -->
+                    <div
+                        class="flex flex-col items-center w-full md:items-start"
+                    >
+                        <div class="mb-5 font-bold text-white capitalize">
+                            Resources
+                        </div>
+                        <div
+                            class="flex flex-col items-center space-y-3 md:items-start"
+                        >
+                            <a
+                                href="#"
+                                class="capitalize text-grayishViolet hover:text-cyan"
+                                >Blog</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalize text-grayishViolet hover:text-cyan"
+                                >Developers</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalize text-grayishViolet hover:text-cyan"
+                                >Support</a
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Menu 3 -->
+                    <div
+                        class="flex flex-col items-center w-full md:items-start"
+                    >
+                        <div class="mb-5 font-bold text-white capitalize">
+                            Company
+                        </div>
+                        <div
+                            class="flex flex-col items-center space-y-3 md:items-start"
+                        >
+                            <a
+                                href="#"
+                                class="capitalize text-grayishViolet hover:text-cyan"
+                                >Our Team</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalize text-grayishViolet hover:text-cyan"
+                                >Careers</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalize text-grayishViolet hover:text-cyan"
+                                >Contact</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Container -->
+                <div class="flex space-x-6">
+                    <a href="#">
+                        <img
+                            src="images/icon-facebook.svg"
+                            alt=""
+                            class="ficon"
+                        />
+                    </a>
+                    <a href="#">
+                        <img
+                            src="images/icon-twitter.svg"
+                            alt=""
+                            class="ficon"
+                        />
+                    </a>
+                    <a href="#">
+                        <img
+                            src="images/icon-pinterest.svg"
+                            alt=""
+                            class="ficon"
+                        />
+                    </a>
+                    <a href="#">
+                        <img
+                            src="images/icon-instagram.svg"
+                            alt=""
+                            class="ficon"
+                        />
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
